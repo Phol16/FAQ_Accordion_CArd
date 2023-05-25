@@ -2,7 +2,6 @@ type Content = {
   title: string;
   content: string;
 };
-
 const contents: Content[] = [
   {
     title: 'How many team members can I invite?',
@@ -46,7 +45,7 @@ const displayContent = contents
   <div class='textContentContainer'>
   <section class='textHeaderContent'>
   <p>${e.title}</p>
-  <img src='./images/icon-arrow-down.svg' alt='arrowDown'/>
+  <img src='../images/icon-arrow-down.svg' alt='arrowDown'/>
   </section>
   <section class='textDetailContent hidden'>
   <p>${e.content}</p>
