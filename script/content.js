@@ -39,11 +39,11 @@ const displayContent = contents
     return `
   <div class='textContentContainer'>
   <section class='textHeaderContent'>
-  <p>${e.title}</p>
+  <h2>${e.title}</h2>
   <img src='./images/icon-arrow-down.svg' alt='arrowDown'/>
   </section>
   <section class='textDetailContent hidden'>
-  <p>${e.content}</p>
+  <h2>${e.content}</h2>
   </section>
   </div>
   `;
