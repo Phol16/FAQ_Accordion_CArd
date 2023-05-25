@@ -46,6 +46,7 @@ const displayContent = contents
   <section class='textHeaderContent'>
   <p>${e.title}</p>
   <img src='../images/icon-arrow-down.svg' alt='arrowDown'/>
+  <img src='./images/icon-arrow-down.svg' alt='arrowDown'/>
   </section>
   <section class='textDetailContent hidden'>
   <p>${e.content}</p>
