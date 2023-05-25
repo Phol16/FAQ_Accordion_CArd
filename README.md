@@ -18,7 +18,7 @@ Desktop View
 
 - Source Code: https://github.com/Phol16/FAQ_Accordion_CArd
 
-- Live Site: 
+- Live Site: https://phol16.github.io/FAQ_Accordion_CArd/
 
 ### My process
 
