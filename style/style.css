@@ -14,7 +14,6 @@ html,
 body {
   min-height: 100%;
   font-family: 'Kumbh Sans';
-  font-size: 12px;
   background-image: linear-gradient(var(--softViolet), var(--softBlue));
 }
 .main {
@@ -62,13 +61,13 @@ body {
   flex-flow: column;
   gap: 1rem;
 }
-.contentContainer h2{
+.heading1{
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
 .mainContentContainer{
-  width: 310px;
+  max-width: 450px;
 }
 .textContentContainer{
   border-bottom: solid 1px var(--darkGrayishBlue);
@@ -91,6 +90,10 @@ body {
   height: fit-content;
   transition:ease-in 200ms;
 }
+.textHeaderContent h2{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
 .textDetailContent{
   color: var(--veryDarkGrayishBlue);
   max-width: 22rem;
@@ -100,9 +103,13 @@ body {
   transition: ease-in-out 200ms;
   line-height: 1.5rem;
 }
+.textDetailContent h2{
+  font-size: 12px;
+  font-weight: 400;
+}
 .active{
   font-weight: 700;
-  scale: 1.05;
+  scale: 1.10;
   padding: 0 0.5rem;
 }
 .hidden{
@@ -151,10 +158,14 @@ body {
     bottom: 8%;
   }
   .contentContainer{
-    padding: 8rem 5rem;
+    padding: 8rem 3rem;
     z-index: 10;
   }
-  .contentContainer h2{
+  .heading1{
     text-align: left;
+    font-size: 2.4rem;
+  }
+  .textHeaderContent h2{
+    font-size: 1rem;
   }
 }
