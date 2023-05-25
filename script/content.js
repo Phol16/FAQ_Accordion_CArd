@@ -22,26 +22,19 @@ const contents = [
     },
 ];
 const content = document.querySelector('.contentHere');
-const handleOpen = (element, index, active) => {
-    if (active) {
-        element.children[1].classList.remove('hidden');
-        element.children[0].children[1].classList.add('rotate');
-        element.children[0].children[0].classList.add('active');
-    }
-    else {
-        element.children[1].classList.add('hidden');
-        element.children[0].children[1].classList.remove('rotate');
-        element.children[0].children[0].classList.remove('active');
-    }
+const handleOpen = (element, index) => {
+    element.children[1].classList.toggle('hidden');
+    element.children[0].children[1].classList.toggle('rotate');
+    element.children[0].children[0].classList.toggle('active');
 };
 const displayContent = contents
     .map((e) => {
     return `
   <div class='textContentContainer'>
-  <section class='textHeaderContent'>
-  <h2>${e.title}</h2>
+  <div class='textHeaderContent'>
+  <p>${e.title}</p>
   <img src='./images/icon-arrow-down.svg' alt='arrowDown'/>
-  </section>
+  </div>
   <section class='textDetailContent hidden'>
   <h2>${e.content}</h2>
   </section>
@@ -52,9 +45,8 @@ const displayContent = contents
 content.innerHTML = displayContent;
 const textContentContainers = document.querySelectorAll('.textContentContainer');
 textContentContainers.forEach((e, i) => {
-    let active = false;
     const el = e;
     el.addEventListener('click', () => {
-        (active = !active), handleOpen(el, i, active);
+        handleOpen(el, i);
     });
 });

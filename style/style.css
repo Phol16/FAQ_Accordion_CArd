@@ -63,22 +63,21 @@ body {
 }
 .heading1{
   font-size: 2rem;
-  font-weight: 700;
   text-align: center;
 }
 .mainContentContainer{
-  max-width: 450px;
+  max-width: 340px;
 }
 .textContentContainer{
   border-bottom: solid 1px var(--darkGrayishBlue);
   padding: 1rem 0;
   margin: auto;
+  width: 18rem;
 }
 .textHeaderContent{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 400;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -90,31 +89,31 @@ body {
   height: fit-content;
   transition:ease-in 200ms;
 }
-.textHeaderContent h2{
+.textHeaderContent p{
   font-size: 0.9rem;
-  font-weight: 400;
 }
 .textDetailContent{
   color: var(--veryDarkGrayishBlue);
-  max-width: 22rem;
+  max-width: 18rem;
   padding-top: 1rem;
   overflow: hidden;
   max-height: 10rem;
-  transition: ease-in-out 200ms;
+  transition: ease-in-out 300ms;
   line-height: 1.5rem;
 }
 .textDetailContent h2{
   font-size: 12px;
   font-weight: 400;
+  max-width: 20rem;
 }
 .active{
   font-weight: 700;
-  scale: 1.10;
+  scale: 1.05;
   padding: 0 0.5rem;
 }
 .hidden{
   padding: 0;
-  transition: ease-in-out 200ms;
+  transition: ease-in-out 300ms;
   max-height: 0px;
 }
 .rotate{
@@ -157,15 +156,19 @@ body {
     left: -18%;
     bottom: 8%;
   }
+  .mainContentContainer{
+    max-width: 500px;
+  }
   .contentContainer{
     padding: 8rem 3rem;
+    max-width:40rem;
     z-index: 10;
   }
   .heading1{
     text-align: left;
     font-size: 2.4rem;
   }
-  .textHeaderContent h2{
-    font-size: 1rem;
+  .textContentContainer{
+    width: 18rem;
   }
 }
